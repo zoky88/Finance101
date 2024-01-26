@@ -1,0 +1,126 @@
+﻿body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0;
+  background-color: green;
+  margin: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+}
+
+main {
+  margin: 0 20px;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+  padding: 10px;
+}
+
+h2 {
+  color: #fff;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+label {
+  padding: 3px 0;
+  font-weight: bold;
+  color: #555;
+}
+
+input {
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.button {
+  background-color: #4caf50;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px 0;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+#infoTable {
+  margin: 0 auto;
+  padding: 0 10px 50px 60px;
+  border-radius: 10px;
+}
+
+#mortgageTable {
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#mortgageTable tr,
+#mortgageTable th,
+#mortgageTable td {
+  border-bottom: 1px solid #ddd;
+}
+#mortgageTable th {
+  display: flex;
+  font-size: 18px;
+  padding: 8px;
+  background-color: #333;
+  color: #fff;
+}
+#mortgageTable td {
+  font-weight: bold;
+  padding: 0 40px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .main-cointainer {
+    display: flex;
+    flex-flow: column nowrap;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  #mortgageForm {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  #mortgageTable {
+    padding-bottom: 30px;
+  }
+}
+@media (min-width: 768px) {
+  main {
+    display: grid;
+    grid-template-rows: 50%;
+    grid-template-columns: 2fr 3fr 2fr;
+    grid-gap: 50px;
+  }
+  #mortgageForm {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  #infoTable {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  #mortgageTable {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+  }
+}

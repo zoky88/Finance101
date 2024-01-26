@@ -1,0 +1,73 @@
+﻿@model Finance101.Models.MortgageForm
+
+@{
+    ViewData["Title"] = "SubmitForm";
+}
+
+<h1>Mortgage Form</h1>
+<hr />
+
+<div class="main">
+    <section id="mortgageFormSection">
+        <form asp-action="SubmitForm" id="mortgageFormId">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <label asp-for="OutstandingMortgageBalance" class="control-label"></label>
+            <input asp-for="OutstandingMortgageBalance" class="form-control" />
+            <span asp-validation-for="OutstandingMortgageBalance" class="text-danger"></span>
+
+            <label asp-for="RepaymentTerm" class="control-label"></label>
+            <input asp-for="RepaymentTerm" class="form-control" />
+            <span asp-validation-for="RepaymentTerm" class="text-danger"></span>
+
+            <label asp-for="CurrentInterestRate" class="control-label"></label>
+            <input asp-for="CurrentInterestRate" class="form-control" />
+            <span asp-validation-for="CurrentInterestRate" class="text-danger"></span>
+
+            <label asp-for="CurrentMonthlyPayment" class="control-label"></label>
+            <input asp-for="CurrentMonthlyPayment" class="form-control" />
+            <span asp-validation-for="CurrentMonthlyPayment" class="text-danger"></span>
+            <input type="submit" value="Submit" class="button" />
+        </form>
+    </section>
+</div>
+
+
+<div>
+    <a asp-action="Index">See mortgage Information</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+
+
+@*old table design that will not be used for now*@
+
+@*     <section id="infoTable">
+    <h2>Mortgage Information Table</h2>
+    <table id="mortgageTable">
+    <thead>
+    <tr>
+    <th>General Info</th>
+    <td>Amount</td>
+    <tr>
+    <tr>
+    <th>Outstanding Balance</th>
+    <td></td>
+    <tr>
+    <tr>
+    <th>Current Rate</th>
+    <td></td>
+    <tr>
+    <th>Monthly Rate</th>
+    <td></td>
+    <tr>
+    <tr>
+    <th>Years Left</th>
+    <td></td>
+    <tr>
+    </thead>
+    </table>
+    </section> *@

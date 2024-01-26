@@ -1,0 +1,37 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Gitrepo\\Finance101\\Finance101\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Finance101.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Finance101.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Gitrepo\\Finance101\\Finance101\\wwwroot\\app\\css\\styles.min.css",
+      "PackagePath": "staticwebassets\\app\\css\\styles.min.css"
+    },
+    {
+      "Id": "C:\\Gitrepo\\Finance101\\Finance101\\wwwroot\\app\\scss\\styles.css",
+      "PackagePath": "staticwebassets\\app\\scss\\styles.css"
+    },
+    {
+      "Id": "C:\\Gitrepo\\Finance101\\Finance101\\wwwroot\\app\\scss\\styles.min.css",
+      "PackagePath": "staticwebassets\\app\\scss\\styles.min.css"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Finance101.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Finance101.props",
+      "PackagePath": "build\\Finance101.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Finance101.props",
+      "PackagePath": "buildMultiTargeting\\Finance101.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Finance101.props",
+      "PackagePath": "buildTransitive\\Finance101.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

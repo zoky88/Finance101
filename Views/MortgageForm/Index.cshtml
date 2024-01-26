@@ -1,0 +1,54 @@
+﻿@model IEnumerable<Finance101.Models.MortgageForm>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="SubmitForm">Submit New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.OutstandingMortgageBalance)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RepaymentTerm)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrentInterestRate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrentMonthlyPayment)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.OutstandingMortgageBalance)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.RepaymentTerm)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CurrentInterestRate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CurrentMonthlyPayment)
+                </td>
+                <td>
+                    <a asp-action="EditMortgageInfo" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-action="MortgageInfo" asp-route-id="@item.Id">Details</a> |
+                    <a asp-action="DeleteMortgageDetails" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
