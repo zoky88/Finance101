@@ -1,10 +1,12 @@
 using Finance101.Data;
+using Finance101.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddScoped<DailyInterestRateService>();
 builder.Services.AddDbContext<Finance101Context>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("Finance101Context")));
 

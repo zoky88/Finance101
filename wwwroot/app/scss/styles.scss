@@ -43,20 +43,11 @@ h2 {
     color: $secondary-color;
 }
 
-h3, h4 {
+h3, h4, dt, dd {
     font-family: $font-family;
     color: $secondary-color;
 }
 
-dt {
-    font-family: $font-family;
-    color: $secondary-color;
-}
-
-dd {
-    font-family: $font-family;
-    color: $secondary-color;
-}
 
 footer {
     display: flex;
@@ -102,10 +93,13 @@ input {
     cursor: pointer;
     margin: 20px 0;
     padding: 10px 15px;
+    transition: box-shadow 0.3s;
+    box-shadow: none;
 }
 
 .button:hover {
-    color: $primary-color;
+    color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .btn-primary {

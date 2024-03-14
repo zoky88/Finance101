@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ZwIdbHwDa3NssbVJH00/NDgPrXTesgEpApVjp26vY8Mbf07u/t2LXOTZ0mfkOCefzLPs0yZMBKZpMVLJ6PdeXA==",
+  "dgSpecHash": "055cDLeIHG8+RTMmyk9pQ2+gWeXUBWaq5yLu1S8y9s6gHeQTMPcFzeNcHrDkxmW9Gu7SdtfTJSsFc03oQC3c1Q==",
   "success": true,
   "projectFilePath": "C:\\Gitrepo\\Finance101\\Finance101\\Finance101.csproj",
   "expectedPackageFiles": [
@@ -134,6 +134,8 @@
     "C:\\Users\\zoran\\.nuget\\packages\\nuget.projectmodel\\6.3.1\\nuget.projectmodel.6.3.1.nupkg.sha512",
     "C:\\Users\\zoran\\.nuget\\packages\\nuget.protocol\\6.3.1\\nuget.protocol.6.3.1.nupkg.sha512",
     "C:\\Users\\zoran\\.nuget\\packages\\nuget.versioning\\6.3.1\\nuget.versioning.6.3.1.nupkg.sha512",
+    "C:\\Users\\zoran\\.nuget\\packages\\nunit\\4.0.1\\nunit.4.0.1.nupkg.sha512",
+    "C:\\Users\\zoran\\.nuget\\packages\\nunit3testadapter\\4.5.0\\nunit3testadapter.4.5.0.nupkg.sha512",
     "C:\\Users\\zoran\\.nuget\\packages\\system.codedom\\5.0.0\\system.codedom.5.0.0.nupkg.sha512",
     "C:\\Users\\zoran\\.nuget\\packages\\system.collections.immutable\\7.0.0\\system.collections.immutable.7.0.0.nupkg.sha512",
     "C:\\Users\\zoran\\.nuget\\packages\\system.composition\\7.0.0\\system.composition.7.0.0.nupkg.sha512",

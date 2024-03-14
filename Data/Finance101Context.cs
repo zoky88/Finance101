@@ -23,6 +23,7 @@ namespace Finance101.Data
             modelBuilder.Entity<MortgageForm>().Property(m => m.RepaymentTerm).HasColumnType("decimal(4,2)");
             modelBuilder.Entity<MortgageForm>().Property(m => m.CurrentInterestRate).HasColumnType("decimal(4,2)");
             modelBuilder.Entity<MortgageForm>().Property(m => m.CurrentMonthlyPayment).HasColumnType("decimal(6,2)");
+            modelBuilder.Entity<MortgageForm>().Property(m => m.DailyInterestRate).HasColumnType("decimal(16, 6)");
         }
     }
 }

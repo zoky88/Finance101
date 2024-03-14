@@ -39,6 +39,12 @@
                     <td>
                         @Html.DisplayFor(modelItem => item.CurrentMonthlyPayment)
                     </td>
+                    <th>
+                        @Html.DisplayNameFor(model => model.DailyInterestRate)
+                    </th>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DailyInterestRate)
+                    </td>
                     <td>
                         <div>
                             <a asp-action="EditMortgageInfo" asp-route-id="@item.Id">Edit</a> |
